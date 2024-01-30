@@ -9,12 +9,12 @@ public class App {
       Aluno[] alunos = new Aluno[n];
 
       for(int i = 0; i < alunos.length; i++) {
-         System.out.println("Digite nome, primeira e segunda nota do " + i + "º aluno:");
-         String nome = input.nextLine();
+         System.out.println("Digite nome, primeira e segunda nota do " + (i + 1) + "º aluno:");
+         String nome = input.next();
          double n1 = input.nextDouble();
          double n2 = input.nextDouble();
 
-	     alunos[i] = new Aluno(nome, n1, n2);
+	 alunos[i] = new Aluno(nome, n1, n2);
         }
 
       System.out.print("Alunos aprovados:\n");
