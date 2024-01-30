@@ -16,7 +16,7 @@ public class Aluno {
     public void retornaNome() {
        if(media() > 6) {
          String aprovado = this.nome;
-         System.out.print(aprovado);
+         System.out.print(" " + aprovado);
        }      
     }
  }
